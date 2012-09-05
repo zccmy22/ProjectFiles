@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="bbHome" Class="AccountDataSourceDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.0.0.9;Initial Catalog=bbHome;Persist Security Info=True;User ID=sa" SettingsObjectName="Account.Data.Properties.Settings" SettingsPropertyName="bbHomeConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Base_t_AccountDetail" Member="Base_t_AccountDetail">
+    <Type Name="Base_t_AccountDetail">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="accountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="orderid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="resume" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="subjectCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="custmerType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="custmerCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustmerName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="useBalance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="endBalance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="opTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="opUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Base_t_AccountSubject" Member="Base_t_AccountSubject">
+    <Type Name="Base_t_AccountSubject">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="subjectType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="subjectName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="subjectCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="direction" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="parentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Base_t_AccountInfo" Member="Base_t_AccountInfo">
+    <Type Name="Base_t_AccountInfo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="userId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="accCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="blockBalance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="createTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Base_t_AccountAuditInfo" Member="Base_t_AccountAuditInfo">
+    <Type Name="Base_t_AccountAuditInfo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="accountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="direction" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="subjectCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="refId" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="opBalance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="createTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="opTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="opUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="createUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="custmerType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="custmerCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="custmerName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Base_t_AccountScurityInfo" Member="Base_t_AccountScurityInfo">
+    <Type Name="Base_t_AccountScurityInfo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="accountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="payPassword" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="useNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="scurityEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="scurityTel" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="isUseEmail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isUseTel" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isChangePwd" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="createTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="emailValidateCode" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="telValidateCode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="emailExpirationTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="telExpirationTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="waitUpdateScurityEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="waitUpdateScurityTel" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="pwdKey" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,19 @@
+<publishData>
+  <publishTarget publishUrl="E:\wcf\账户Wcf\发布\">
+    <file relUrl="bin/Account.Data.pdb" publishTime="06/06/2012 14:11:50" />
+    <file relUrl="bin/WcfAccountService.pdb" publishTime="06/18/2012 14:09:23" />
+    <file relUrl="bin/WcfAccount.pdb" publishTime="06/18/2012 14:09:22" />
+    <file relUrl="bin/Account.Entity.pdb" publishTime="06/06/2012 14:11:47" />
+    <file relUrl="WcfAccountService.svc" publishTime="05/21/2012 12:48:23" />
+    <file relUrl="bin/WcfAccount.dll" publishTime="06/18/2012 14:09:23" />
+    <file relUrl="WcfAccountScurityService.svc" publishTime="05/21/2012 12:50:23" />
+    <file relUrl="Web.config" publishTime="05/23/2012 16:52:59" />
+    <file relUrl="bin/Account.Entity.dll" publishTime="06/06/2012 14:11:47" />
+    <file relUrl="bin/Account.Data.dll" publishTime="06/06/2012 14:11:50" />
+    <file relUrl="bin/Account.Common.pdb" publishTime="06/06/2012 14:11:51" />
+    <file relUrl="bin/WcfAccountService.dll" publishTime="06/18/2012 14:09:23" />
+    <file relUrl="bin/Account.Business.pdb" publishTime="06/18/2012 14:07:32" />
+    <file relUrl="bin/Account.Business.dll" publishTime="06/18/2012 14:07:32" />
+    <file relUrl="bin/Account.Common.dll" publishTime="06/06/2012 14:11:51" />
+  </publishTarget>
+</publishData>

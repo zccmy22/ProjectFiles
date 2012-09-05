@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.75" name="AccountDataSource">
+  <DataContextMoniker Name="/AccountDataSourceDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2c89d208-b3dd-4f7a-9c95-a4a8d9a5c5f9" absoluteBounds="5.125, 0.5, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/AccountDataSourceDataContext/Base_t_AccountDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb41aeb1-a5c8-4f70-921a-255e78414d5d" absoluteBounds="5.14, 0.96, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fc88396-5a76-4cce-82b2-fd0902cace89" absoluteBounds="5.125, 4.375, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/AccountDataSourceDataContext/Base_t_AccountSubject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a22547e-ddb6-406a-ba15-8c5a55a2f0bf" absoluteBounds="5.14, 4.835, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94b39cd4-b152-48b6-a411-8287b2309e5f" absoluteBounds="2.75, 1.375, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/AccountDataSourceDataContext/Base_t_AccountInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76369118-5f8b-4334-9cc0-295afe523f20" absoluteBounds="2.765, 1.835, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="72d5892b-8b4c-4aa6-8479-d46a55b575db" absoluteBounds="0.5, 0.5, 2, 3.8637821451822916">
+      <DataClassMoniker Name="/AccountDataSourceDataContext/Base_t_AccountAuditInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c25c20b0-772b-4f32-967e-e84cb66e827a" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a813d6ee-f7cb-4328-8f92-0f9041acf628" absoluteBounds="0.5, 4.5, 2, 4.0548018391927076">
+      <DataClassMoniker Name="/AccountDataSourceDataContext/Base_t_AccountScurityInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4aa6706c-07f1-4fad-b294-7a2dca40ac65" absoluteBounds="0.51500000000000012, 4.96, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

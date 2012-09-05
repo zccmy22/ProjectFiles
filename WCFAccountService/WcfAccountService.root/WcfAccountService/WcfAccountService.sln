@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfAccountService", "WcfAccountService\WcfAccountService.csproj", "{663F7722-F3CE-4885-9691-C0F2C4A77547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfAccount", "WcfAccount\WcfAccount.csproj", "{B12021BB-A79E-47DF-8B78-C0BAB08A450D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Entity", "Account.Entity\Account.Entity.csproj", "{7DB635D2-EAA5-4D35-9891-AE8456DE7D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Data", "Account.Data\Account.Data.csproj", "{D61B3A0B-3A66-428A-A479-F6012468681B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DB635D2-EAA5-4D35-9891-AE8456DE7D8D} = {7DB635D2-EAA5-4D35-9891-AE8456DE7D8D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Common", "Account.Common\Account.Common.csproj", "{314D2372-CE19-4B0B-89AE-94984CBC7DB7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D61B3A0B-3A66-428A-A479-F6012468681B} = {D61B3A0B-3A66-428A-A479-F6012468681B}
+		{7DB635D2-EAA5-4D35-9891-AE8456DE7D8D} = {7DB635D2-EAA5-4D35-9891-AE8456DE7D8D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Business", "Account.Business\Account.Business.csproj", "{1E260CD5-B698-4A6C-A61B-EDA57E6BC6C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{314D2372-CE19-4B0B-89AE-94984CBC7DB7} = {314D2372-CE19-4B0B-89AE-94984CBC7DB7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "WcfAccountService\TestProject1\TestProject1.csproj", "{36F6C8B4-20C8-4B00-A549-CCCC4298600D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A833F00-C22E-4EEC-B918-7178ACF0DD76}"
+	ProjectSection(SolutionItems) = preProject
+		WcfAccountService\LocalTestRun.testrunconfig = WcfAccountService\LocalTestRun.testrunconfig
+		WcfAccountService\WcfAccountService.vsmdi = WcfAccountService\WcfAccountService.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WcfAccountService\WcfAccountService.vsmdi
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 8
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Account.Business\\Account.Business.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Account.Business\\
+		SccProjectUniqueName2 = Account.Common\\Account.Common.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Account.Common\\
+		SccProjectUniqueName3 = Account.Data\\Account.Data.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Account.Data\\
+		SccProjectUniqueName4 = Account.Entity\\Account.Entity.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = Account.Entity\\
+		SccProjectUniqueName5 = WcfAccount\\WcfAccount.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = WcfAccount\\
+		SccProjectUniqueName6 = WcfAccountService\\TestProject1\\TestProject1.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = WcfAccountService\\TestProject1\\
+		SccProjectUniqueName7 = WcfAccountService\\WcfAccountService.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = WcfAccountService\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{663F7722-F3CE-4885-9691-C0F2C4A77547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663F7722-F3CE-4885-9691-C0F2C4A77547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663F7722-F3CE-4885-9691-C0F2C4A77547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663F7722-F3CE-4885-9691-C0F2C4A77547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12021BB-A79E-47DF-8B78-C0BAB08A450D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12021BB-A79E-47DF-8B78-C0BAB08A450D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12021BB-A79E-47DF-8B78-C0BAB08A450D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12021BB-A79E-47DF-8B78-C0BAB08A450D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB635D2-EAA5-4D35-9891-AE8456DE7D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB635D2-EAA5-4D35-9891-AE8456DE7D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB635D2-EAA5-4D35-9891-AE8456DE7D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB635D2-EAA5-4D35-9891-AE8456DE7D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61B3A0B-3A66-428A-A479-F6012468681B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61B3A0B-3A66-428A-A479-F6012468681B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61B3A0B-3A66-428A-A479-F6012468681B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61B3A0B-3A66-428A-A479-F6012468681B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{314D2372-CE19-4B0B-89AE-94984CBC7DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{314D2372-CE19-4B0B-89AE-94984CBC7DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{314D2372-CE19-4B0B-89AE-94984CBC7DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{314D2372-CE19-4B0B-89AE-94984CBC7DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E260CD5-B698-4A6C-A61B-EDA57E6BC6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E260CD5-B698-4A6C-A61B-EDA57E6BC6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E260CD5-B698-4A6C-A61B-EDA57E6BC6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E260CD5-B698-4A6C-A61B-EDA57E6BC6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F6C8B4-20C8-4B00-A549-CCCC4298600D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F6C8B4-20C8-4B00-A549-CCCC4298600D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F6C8B4-20C8-4B00-A549-CCCC4298600D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F6C8B4-20C8-4B00-A549-CCCC4298600D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
